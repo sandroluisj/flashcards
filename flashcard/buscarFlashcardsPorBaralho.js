@@ -1,4 +1,4 @@
-const { flashcard } = require('../dados.js')
+const { flashcard } = require('../data')
 
 function buscarFlashcardsPorBaralho(idBaralho) {
     return flashcard.filter(flashcards => flashcards.idBaralho === idBaralho)
