@@ -91,10 +91,18 @@ function menu(){
                     menu()
                 break;
                 case"10":
-                    buscarFlashcardsPorPergunta()
+                    let buscarPergunta = prompt("Informe a pergunta do flashcard: ")
+                    let resultado = buscarFlashcardsPorPergunta(buscarPergunta)
+                    console.log(resultado)
+                    menu()
                 break;
                 case"11":
-                    buscarFlashcardsPorBaralho()
+                    listarBaralhos()
+                    idBaralho = parseInt(prompt("Escolha um baralho para buscar o flashcard: "))
+                    let flashcardsEncontrados = buscarFlashcardsPorBaralho(idBaralho)
+                    console.log(flashcardsEncontrados)
+                    menu()
+                break
                 break;
                 case"0":
                     console.log ("saindo........................")
