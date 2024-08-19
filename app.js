@@ -100,7 +100,7 @@ function menu(){
                     listarBaralhos()
                     idBaralho = parseInt(prompt("Escolha um baralho para buscar o flashcard: "))
                     let flashcardsEncontrados = buscarFlashcardsPorBaralho(idBaralho)
-                    console.log(flashcardsEncontrados)
+                    console.log(`${flashcardsEncontrados}`)
                     menu()
                 break
                 break;
